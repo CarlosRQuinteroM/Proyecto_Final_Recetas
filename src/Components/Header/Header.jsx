@@ -14,7 +14,7 @@ const Header = () => {
   };
 
   return (
-    <div>
+    <div className="bodyNavBar">
       <Navbar bg="navBackGround" sticky="top" expand="lg" collapseOnSelect>
         <Navbar.Brand>
           <img className="pasticho" src={pasticho} alt="pasticho"></img>

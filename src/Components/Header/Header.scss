@@ -1,58 +1,65 @@
-.pasticho {
-  width: 9em !important;
-  border-left: 1em transparent solid;
-}
+.bodyNavBar {
+  position: absolute;
+  
+  top: 0;
+  width: 100%;
+  z-index: 10;
 
-.bg-navBackGround {
-  background-color: $color2;
-}
-.BtnCollapse {
-  border-radius: 0.5em;
-  padding-left: 4em;
-}
-.BtnCollapse:hover {
-  background-color: $color3;
-}
-.BtnLogin {
-  display: flex;
-  position: relative;
-  left: 20em;
-  width: 5em;
-  height: 3em;
-  text-align: center !important;
-  align-items: center;
-  border-radius: 0.5em;
-  background-color: $color3;
-}
-.BtnLogin:hover {
-  transform: scale(1.1);
-  transition: 0.5s;
-}
-
-@media screen and (max-width: 1095px) {
+  .pasticho {
+    width: 9em !important;
+    border-left: 1em transparent solid;
+  }
+  .bg-navBackGround {
+    background-color: #f8ede3e8;
+  }
   .BtnCollapse {
-    padding-left: 0em;
+    border-radius: 0.5em;
+    padding-left: 4em;
+  }
+  .BtnCollapse:hover {
+    background-color: $color3;
   }
   .BtnLogin {
-    left: 0em;
+    display: flex;
+    position: relative;
+    left: 20em;
+    width: 5em;
+    height: 3em;
+    text-align: center !important;
+    align-items: center;
+    border-radius: 0.5em;
+    background-color: $color3;
   }
-}
+  .BtnLogin:hover {
+    transform: scale(1.1);
+    transition: 0.5s;
+  }
 
-.BtnFaSearch {
-  color: rgb(104, 104, 104) !important;
-}
-.BtnFaSearch:hover {
-  transform: scale(1.5) !important;
-}
-@media screen and (min-width: 992px) {
+  @media screen and (max-width: 1095px) {
+    .BtnCollapse {
+      padding-left: 0em;
+    }
+    .BtnLogin {
+      left: 0em;
+    }
+  }
+
   .BtnFaSearch {
-    display: none !important;
+    color: rgb(104, 104, 104) !important;
   }
-}
+  .BtnFaSearch:hover {
+    transform: scale(1.5) !important;
+  }
+  @media screen and (min-width: 992px) {
+    .BtnFaSearch {
+      display: none !important;
+    }
+  }
 
-@media screen and (max-width: 992px) {
-
-  .BtnBuscar {
-    display: none !important;
+  @media screen and (max-width: 992px) {
+    .BtnBuscar {
+      position: fixed;
+      display: none !important;
+    }
   }
 }
