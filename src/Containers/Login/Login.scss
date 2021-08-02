@@ -1,32 +1,33 @@
 .body {
   width: 100%;
-  height: 40em;
+  height: 47em;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  background: rgb(248, 237, 227);
-background: linear-gradient(
-  180deg,
-  rgba(248, 237, 227, 1) 24%,
-  rgba(189, 210, 182, 1) 100%
-);
+  background-image: url(../../Img/ingredientes.jpg);
+  // background: rgb(248, 237, 227);
+  // background: linear-gradient(
+  // 180deg,
+  // rgba(248, 237, 227, 1) 24%,
+  // rgba(189, 210, 182, 1) 100%
+// );
   #Logintitle {
     color: $color4;
     text-align: center;
   }
 
   .FormCard {
-    
-    background-color: rgb(246, 246, 246);
+
+    background-color: rgba(246, 246, 246, 0.781);
     display: flex;
-    position: absolute;
+    position:relative;
     width: 20em;
     height: 30em;
     border-radius: 0.6em;
-    left: 35vw;
+    left: 40vw;
     top: 10em;
-    border: 0.2em solid rgb(170, 165, 165) !important ;
+    // border: 0.2em solid rgb(170, 165, 165) !important ;
     .BtnLogin1 {
       display: flex;
       position: relative;
@@ -42,6 +43,8 @@ background: linear-gradient(
 
   @media screen and(max-width: 600px) {
     .FormCard {
+      position: absolute;
+
       left: 7vw;
     }
   }
