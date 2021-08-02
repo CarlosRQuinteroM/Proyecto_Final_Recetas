@@ -1,6 +1,6 @@
 .bodyNavBar {
   position: absolute;
-  
+
   top: 0;
   width: 100%;
   z-index: 10;
@@ -14,11 +14,12 @@
   }
   .BtnCollapse {
     border-radius: 0.5em;
-    padding-left: 4em;
+    // padding-left: 4em;
+    &:hover {
+      background-color: $color3;
+    }
   }
-  .BtnCollapse:hover {
-    background-color: $color3;
-  }
+
   .BtnLogin {
     display: flex;
     position: relative;
@@ -29,10 +30,39 @@
     align-items: center;
     border-radius: 0.5em;
     background-color: $color3;
+    &:hover {
+      background-color: $color4;
+      transform: scale(1.1);
+      transition: 0.5s;
+    }
   }
-  .BtnLogin:hover {
-    transform: scale(1.1);
-    transition: 0.5s;
+
+  .costumerBTN {
+    display: flex;
+    position: relative;
+    left: 20em;
+    width: 3em;
+    height: 3em;
+    align-items: center;
+    border-radius: 50%;
+    background-color: $color3;
+    &:hover {
+      background-color: $color5;
+      transform: scale(1.1);
+      transition: 0.5s;
+    }
+    #Iniciales{
+      color: $color2;
+      font-family:serif;
+      font-size: 1.1em;
+      display: flex;
+      position: relative;
+      top: 7px !important;
+    }
+  }
+
+  .LogOutBTN {
+    left: 25em;
   }
 
   @media screen and (max-width: 1095px) {
@@ -40,16 +70,20 @@
       padding-left: 0em;
     }
     .BtnLogin {
-      left: 0em;
+      left: 1em;
+    }
+    .LogOutBTN {
+      left: 2em;
     }
   }
 
   .BtnFaSearch {
     color: rgb(104, 104, 104) !important;
+    &:hover {
+      transform: scale(1.5) !important;
+    }
   }
-  .BtnFaSearch:hover {
-    transform: scale(1.5) !important;
-  }
+
   @media screen and (min-width: 992px) {
     .BtnFaSearch {
       display: none !important;
@@ -57,9 +91,24 @@
   }
 
   @media screen and (max-width: 992px) {
+
     .BtnBuscar {
       position: fixed;
       display: none !important;
+    }
+    .LogOutBTN {
+      left: 0em;
+    }
+    .BtnLogin {
+      left: 1em;
+    }
+    .costumerBTN{
+      left: 1em;
+      background-color: $color5;
+    }
+    #Iniciales{
+      color: white !important;
+      left: 7px !important;
     }
   }
 }

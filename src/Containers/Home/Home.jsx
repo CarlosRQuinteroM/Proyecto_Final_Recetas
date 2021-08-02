@@ -1,6 +1,8 @@
 import React from 'react'
+import { connect } from 'react-redux';
 
-const Home = () => {
+const Home = (props) => {
+    console.log(props.credentials.token)
     return (
         <div>
             Esto es Home
@@ -8,11 +10,9 @@ const Home = () => {
     )
 }
 
-export default Home
-
-
-
-
+export default connect((state) => ({
+  credentials: state.credentials,
+}))(Home);
 
 
 
