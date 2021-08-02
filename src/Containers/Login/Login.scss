@@ -1,0 +1,48 @@
+.body {
+  width: 100%;
+  height: 40em;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background: rgb(248, 237, 227);
+background: linear-gradient(
+  180deg,
+  rgba(248, 237, 227, 1) 24%,
+  rgba(189, 210, 182, 1) 100%
+);
+  #Logintitle {
+    color: $color4;
+    text-align: center;
+  }
+
+  .FormCard {
+    
+    background-color: rgb(246, 246, 246);
+    display: flex;
+    position: absolute;
+    width: 20em;
+    height: 30em;
+    border-radius: 0.6em;
+    left: 35vw;
+    top: 10em;
+    border: 0.2em solid rgb(170, 165, 165) !important ;
+    .BtnLogin1 {
+      display: flex;
+      position: relative;
+      background-color: $color3;
+      border: none;
+      left: 1em;
+    }
+    .AlingForm{
+      border: 0.5em solid transparent ;
+    }
+
+  }
+
+  @media screen and(max-width: 600px) {
+    .FormCard {
+      left: 7vw;
+    }
+  }
+}
