@@ -1,12 +1,21 @@
 import React from 'react'
 import { connect } from 'react-redux';
 
+
 const Home = (props) => {
     console.log(props.credentials.token)
+    const myStyleHome = {
+        color: "white",
+        position:"relative",
+        top:"5em",
+        left:"19em",
+    }
     return (
-        <div>
-            Esto es Home
+        <div className="body">
+        <h1 style={myStyleHome}>Home</h1>
         </div>
+        
+        
     )
 }
 
