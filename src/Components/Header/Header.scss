@@ -25,16 +25,29 @@
     position: relative;
     left: 20em;
     width: 5em;
-    height: 3em;
-    text-align: center !important;
-    align-items: center;
+    height: 2.3em;
     border-radius: 0.5em;
     background-color: $color3;
     &:hover {
-      background-color: $color4;
+      background-color: $color5;
       transform: scale(1.1);
       transition: 0.5s;
     }
+    #Iniciales {
+      color: $color5;
+      font-family: serif;
+      font-size: 1.1em;
+      display: flex;
+      position: relative;
+      &:hover {
+        color: $color2;
+        transition: 0.2s;
+      }
+    }
+  }
+  .BtnRegister {
+    width: 8em;
+    left: 28em;
   }
 
   .costumerBTN {
@@ -51,9 +64,9 @@
       transform: scale(1.1);
       transition: 0.5s;
     }
-    #Iniciales{
+    #Iniciales {
       color: $color2;
-      font-family:serif;
+      font-family: serif;
       font-size: 1.1em;
       display: flex;
       position: relative;
@@ -91,24 +104,28 @@
   }
 
   @media screen and (max-width: 992px) {
-
     .BtnBuscar {
       position: fixed;
       display: none !important;
     }
     .LogOutBTN {
       left: 0em;
+      width: 6em;
+      top: 0.25em;
     }
     .BtnLogin {
       left: 1em;
     }
-    .costumerBTN{
+    .costumerBTN {
       left: 1em;
       background-color: $color5;
     }
-    #Iniciales{
+    .BtnRegister{
+      top: 0.25em;
+    }
+    #Iniciales {
       color: white !important;
-      left: 7px !important;
+      left: 0.45em !important;
     }
   }
 }

@@ -75,7 +75,12 @@ const Header = (props) => {
               </Nav.Link>
             </Nav>
             <Nav className="BtnLogin">
-              <Nav.Link onClick={() => takeMe("/login")}>Login</Nav.Link>
+              <Nav.Link onClick={() => takeMe("/login")}><p id="Iniciales">LOGIN</p></Nav.Link>
+            </Nav>
+            <Nav className="BtnLogin BtnRegister">
+              <Nav.Link onClick={() => takeMe("/registro")}>
+                <p id="Iniciales">REGISTRATE</p>
+              </Nav.Link>
             </Nav>
           </NavbarCollapse>
         </Navbar>
@@ -151,7 +156,7 @@ const Header = (props) => {
             </Nav>
             <Nav>
               <Nav.Link className="BtnLogin LogOutBTN" onClick={() => LogOut()}>
-                logOut
+              <p id="Iniciales">LOGOUT</p>
               </Nav.Link>
             </Nav>
           </NavbarCollapse>
@@ -225,7 +230,7 @@ const Header = (props) => {
             </Nav>
             <Nav>
               <Nav.Link className="BtnLogin LogOutBTN" onClick={() => LogOut()}>
-                logOut
+               <p id="Iniciales">LOGOUT</p>
               </Nav.Link>
             </Nav>
           </NavbarCollapse>
