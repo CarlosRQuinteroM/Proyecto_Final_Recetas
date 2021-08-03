@@ -1,58 +1,131 @@
-.pasticho {
-  width: 9em !important;
-  border-left: 1em transparent solid;
-}
+.bodyNavBar {
+  position: absolute;
 
-.bg-navBackGround {
-  background-color: $color2;
-}
-.BtnCollapse {
-  border-radius: 0.5em;
-  padding-left: 4em;
-}
-.BtnCollapse:hover {
-  background-color: $color3;
-}
-.BtnLogin {
-  display: flex;
-  position: relative;
-  left: 20em;
-  width: 5em;
-  height: 3em;
-  text-align: center !important;
-  align-items: center;
-  border-radius: 0.5em;
-  background-color: $color3;
-}
-.BtnLogin:hover {
-  transform: scale(1.1);
-  transition: 0.5s;
-}
+  top: 0;
+  width: 100%;
+  z-index: 10;
 
-@media screen and (max-width: 1095px) {
+  .pasticho {
+    width: 9em !important;
+    border-left: 1em transparent solid;
+  }
+  .bg-navBackGround {
+    background-color: #f8ede3e8;
+  }
   .BtnCollapse {
-    padding-left: 0em;
+    border-radius: 0.5em;
+    // padding-left: 4em;
+    &:hover {
+      background-color: $color3;
+    }
   }
+
   .BtnLogin {
-    left: 0em;
+    display: flex;
+    position: relative;
+    left: 20em;
+    width: 5em;
+    height: 2.3em;
+    border-radius: 0.5em;
+    background-color: $color3;
+    &:hover {
+      background-color: $color5;
+      transform: scale(1.1);
+      transition: 0.5s;
+    }
+    #Iniciales {
+      color: $color5;
+      font-family: serif;
+      font-size: 1.1em;
+      display: flex;
+      position: relative;
+      &:hover {
+        color: $color2;
+        transition: 0.2s;
+      }
+    }
   }
-}
+  .BtnRegister {
+    width: 8em;
+    left: 28em;
+  }
 
-.BtnFaSearch {
-  color: rgb(104, 104, 104) !important;
-}
-.BtnFaSearch:hover {
-  transform: scale(1.5) !important;
-}
-@media screen and (min-width: 992px) {
+  .costumerBTN {
+    display: flex;
+    position: relative;
+    left: 20em;
+    width: 3em;
+    height: 3em;
+    align-items: center;
+    border-radius: 50%;
+    background-color: $color3;
+    &:hover {
+      background-color: $color5;
+      transform: scale(1.1);
+      transition: 0.5s;
+    }
+    #Iniciales {
+      color: $color2;
+      font-family: serif;
+      font-size: 1.1em;
+      display: flex;
+      position: relative;
+      top: 7px !important;
+    }
+  }
+
+  .LogOutBTN {
+    left: 25em;
+  }
+
+  @media screen and (max-width: 1095px) {
+    .BtnCollapse {
+      padding-left: 0em;
+    }
+    .BtnLogin {
+      left: 1em;
+    }
+    .LogOutBTN {
+      left: 2em;
+    }
+  }
+
   .BtnFaSearch {
-    display: none !important;
+    color: rgb(104, 104, 104) !important;
+    &:hover {
+      transform: scale(1.5) !important;
+    }
   }
-}
 
-@media screen and (max-width: 992px) {
+  @media screen and (min-width: 992px) {
+    .BtnFaSearch {
+      display: none !important;
+    }
+  }
 
-  .BtnBuscar {
-    display: none !important;
+  @media screen and (max-width: 992px) {
+    .BtnBuscar {
+      position: fixed;
+      display: none !important;
+    }
+    .LogOutBTN {
+      left: 0em;
+      width: 6em;
+      top: 0.25em;
+    }
+    .BtnLogin {
+      left: 1em;
+    }
+    .costumerBTN {
+      left: 1em;
+      background-color: $color5;
+    }
+    .BtnRegister{
+      top: 0.25em;
+    }
+    #Iniciales {
+      color: white !important;
+      left: 0.45em !important;
+    }
   }
 }
