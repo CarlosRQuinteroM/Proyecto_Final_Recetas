@@ -6,6 +6,7 @@ import Header from './Components/Header/Header.jsx';
 import Footer from './Components/Footer/Footer.jsx';
 import Explore from './Containers/Explore/Explore';
 import Login from './Containers/Login/Login';
+import Register from './Containers/Register/Register';
 require('dotenv').config()
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
         <Route path="/" exact component={Home}/>
         <Route path="/explore" exact component={Explore}/>
         <Route path="/login" exact component={Login}/>
+        <Route path="/registro" exact component={Register}/>
         </Switch>
       <Footer/>
       
